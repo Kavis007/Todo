@@ -1,0 +1,75 @@
+.card_class_glass{
+background: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 10px 10px 15px blue;
+  z-index: 1;
+}
+.bodyy{
+  height:"100vh";
+  width:100%;
+  background-image: url("C:\Users\HP World\Downloads\pexels-andre-furtado-43594-370717.jpg");
+  /* filter: blur(6px); */
+  background-image: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+ 
+}
+.bodyy::before{
+  content: "";
+  backdrop-filter:blur(8px);
+  z-index:-1;
+
+}
+.b1{
+  margin-right: 20px!important;
+  margin-bottom: 10px;
+  background-color: black!important;
+  color:grey;
+  border-color: white!important;
+ 
+}
+.b1:hover{
+  background-color: grey;
+}
+.txt{
+    font-size: 50px;
+    font-weight: 700;
+     color:black;
+     text-shadow: 3px 3px 3px white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+.name1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  text-shadow: 1px 0px 0px ;
+  color:black
+  
+}
+.name1::placeholder{
+  background-color:transparent black;
+  color: grey  ;
+}
+.name1:hover{
+  width:100%
+}
+.card_class_glass{
+  background-color: transparent!important;
+  height: 50vh!important;
+  width:100%!important;
+  border-radius: 100px!important;
+  box-shadow: 10px 10px 15px black;
+  background-color: transparent black;
+
+}
+.name2{
+font-size: larger;
+font-weight: 900;
+color: black;
+text-shadow: 3px 3px 3px white;
+}
