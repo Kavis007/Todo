@@ -15,12 +15,23 @@ const Formtoapi = () => {
     const uname = "kaviskavi";
     const pass = "Kavi@13";
     if (username === uname && password === pass) {
+      Swal.fire({
+        title: 'Login Successful!',
+        text: 'Welcome back!',
+        icon: 'success',
+        confirmButtonText: 'Okay'
+      });
       nav('/Todo')
 
     }
     else {
 
-      alert('wrong')
+      Swal.fire({
+        title: 'Login Failed!',
+        text: 'Please check Your details.',
+        icon: 'error',
+        confirmButtonText: 'Try Again'
+      });
 
     }
   }

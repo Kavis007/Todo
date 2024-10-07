@@ -35,28 +35,31 @@ background: transparent;
   background-color: grey;
 }
 .txt{
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 600;
      color:black;
      text-shadow: 3px 3px 3px white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:"Fredoka", sans-serif !important;
   }
-.name1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  font-weight: 700;
-  border: none;
-  border-radius: 7px;
-  text-shadow: 1px 0px 0px ;
-  color:black
+  .name1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    text-shadow: 1px 0px 0px;
+    color: black;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+  }
   
-}
+  /* Hover effect */
+  .name1:hover {
+    box-shadow: 0 4px 10px black /* Adjust the values for desired shadow effect */
+  }
+  
 .name1::placeholder{
   background-color:transparent black;
-  color: grey  ;
-}
-.name1:hover{
-  width:100%
+  color: #6c757d  ;
 }
 .card_class_glass{
   background-color: transparent!important;

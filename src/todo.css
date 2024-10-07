@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+.bodyin {
+    background-color: #212529; /* Choose your desired background color */
+    padding: 20px; /* Optional: Add padding for spacing */
+    min-height: 100vh; /* Ensures the background covers the full viewport */
+}
+.submit-button {
+    color: white;
+    background-color: #343a40;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2),
+                0 1px 3px rgba(255, 255, 255, 0.1); 
+    transition: box-shadow 0.3s ease; 
+    width: 25%;
+}
+.submit-button2{
+    color: white;
+    background-color: #343a40;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2),
+                0 1px 3px rgba(255, 255, 255, 0.1); 
+    transition: box-shadow 0.3s ease; 
+    width:40%;
+    height: 70%;
+}
+
+.submit-button:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4), 
+                0 2px 6px rgba(255, 255, 255, 0.3);
+}
+.field-name{
+    color: white!important;
+    font-family:"Fredoka", sans-serif !important;
+    font-size: 20px;
+    font-weight: 300;
+}
+.inputfield{
+    background:#343a40!important;
+    border:white!important;
+    color: rgb(224, 202, 202) !important;
+    border-radius: 5px;
+    width: 100%;
+    height:60%
+}
+.rdt_Pagination{
+    background-color: #495057!important;
+    color: white!important;
+    font-size: 17px !important;
+    font-family:"Fredoka", sans-serif !important;
+ 
+}
+.esggSK{
+    background-color: #dee2e6 !important;
+}
