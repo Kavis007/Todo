@@ -138,11 +138,12 @@ const Todo = () => {
       name: 'Actions',
       cell: (row) => (
         <>
-          <button className='submit-button2' onClick={() => handleEdit(row)}>
-            Edit<CiEdit />
+          <button className='submit-button2' style={{backgroundColor:"#3c096c"}}onClick={() => handleEdit(row)}>
+            Edit &nbsp;<CiEdit />
           </button>&nbsp;
-          <button className='submit-button2' onClick={() => handleDelete(row)}>
-            Delete<LuDelete /> </button>
+         
+          <button className='submit-button2'style={{backgroundColor:"#6a040f"}} onClick={() => handleDelete(row)}>
+            Delete &nbsp;<LuDelete /> </button>
         </>
       )
     }
@@ -153,6 +154,9 @@ const Todo = () => {
       {/* Form Section */}
       <form onSubmit={handlesubmit}>
         <Row className="gy-3">
+          <div>
+            <span style={{color:"#c71f37",fontFamily: "'Cormorant Garamond', serif",display:'flex',allignItems:'center',justifyContent:'center',fontSize:'30px',fontWeight:'900'}}>Client Details</span>
+          </div>
           <Col xs={12} md={6}>
             <label className='field-name'>ClientId:</label>
             <input className='inputfield' type='text' onChange={handleChange} name='clientId' value={formdata.clientId}></input>
@@ -169,19 +173,23 @@ const Todo = () => {
             <label className='field-name'>GST:</label>
             <input className='inputfield' type='text' onChange={handleChange} name='gst' value={formdata.gst}></input>
           </Col>
-          <Col xs={12} className="d-flex justify-content-center">
+          
+          <Col xs={12} className="d-flex justify-content-center mt-5">
             <button type="submit" className='submit-button'>Submit</button>
+            
           </Col>
         </Row>
       </form>
 
       {/* DataTable Section */}
       <DataTable
+        
         data={record}
         columns={Colum}
         pagination
         customStyles={todostyle}
         responsive
+        className="mt-4"
       />
     </Container>
   )
